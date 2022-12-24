@@ -12,9 +12,9 @@ i= np.random.randint(0,60)
 st.markdown(f"### {question.loc[i]['questions']}")
 form = st.form(key='Mes-qyestions')
 name = form.text_input('saisir votre réponse')
-submit = form.form_submit_button('Submit')
+submit = form.form_submit_button('Valider')
 
-st.write('Appuyer sur entre pour voir la reponse')
+st.write('Appuyer sur valider pour voir la reponse')
 
 if submit:
     st.markdown('## Votre reponse')
